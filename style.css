@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C7B8EA; /* light purple background */
+    color: #FFFFFF; /* white text */
+}
+
+header {
+    background-color: #7A288A; /* darker purple header */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #8e44ad; /* purple border */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #E4D6F5; /* light purple section */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: #8c8476;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: #FFFFFF; /* white text */
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #CCCCCC; /* light gray text */
+}
+
+footer {
+    background-color: #7A288A; /* darker purple footer */
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #CCCCCC; /* light gray text */
+}
+p {
+    color:black;
+}
