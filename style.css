@@ -1,3 +1,19 @@
+/* ... your existing styles ... */
+
+#clock-section {
+    background-color: #E4D6F5; /* light purple section */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#clock {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #C7B8EA; /* light purple background */
@@ -23,7 +39,60 @@ main {
     align-items: center;
     padding: 20px;
 }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
 
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.locontainer {
+    --uib-size: 45px;
+    --uib-color: black;
+    --uib-speed: 2s;
+    position: relative;
+    height: var(--uib-size);
+    width: var(--uib-size);
+}
+
+.locontainer::before,
+.locontainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: var(--uib-color);
+    animation: pulse var(--uib-speed) linear infinite;
+    transform: scale(0);
+    opacity: 0;
+    transition: background-color 0.3s ease;
+}
+
+.locontainer::after {
+    animation-delay: calc(var(--uib-speed) / -2);
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+}
 section {
     background-color: #E4D6F5; /* light purple section */
     padding: 20px;
